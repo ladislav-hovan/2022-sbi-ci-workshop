@@ -20,6 +20,11 @@ jobs:
   #
   # Obs 2: The uname command works on macOS too.
   #        Feel free to also try out other commands.
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - name: Where am I running?
+        run: uname
 
   windows-job:
     runs-on: windows-latest
